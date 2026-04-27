@@ -80,3 +80,13 @@ export const mockExpensesByCategory = [
   { categoria: 'Infraestrutura', valor: 1870, color: '#10b981' },
   { categoria: 'Operacional', valor: 980, color: '#ef4444' },
 ];
+
+export const mockWeatherChart = [
+  { dia: 'Dom', temp: -4 },
+  { dia: 'Seg', temp: -3 },
+  { dia: 'Ter', temp: 0 },
+  { dia: 'Qua', temp: 1 },
+  { dia: 'Qui', temp: 0 },
+  { dia: 'Sex', temp: 1 },
+  { dia: 'Sáb', temp: 2 },
+];

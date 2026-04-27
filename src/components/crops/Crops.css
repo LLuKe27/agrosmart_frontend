@@ -1,0 +1,115 @@
+.crops-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: var(--space-xl);
+  margin-top: var(--space-lg);
+}
+
+.crops-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-xl);
+}
+
+.crops-upload-area {
+  width: 100%;
+  background-color: var(--bg-card);
+  border-radius: var(--radius-2xl);
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-md);
+  color: var(--text-primary);
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-base);
+  cursor: pointer;
+  border: 2px dashed transparent;
+}
+
+.crops-upload-area:hover {
+  border-color: var(--border-primary);
+  background-color: var(--bg-card-hover);
+}
+
+.crops-upload-icon-wrapper {
+  background-color: white;
+  width: 72px;
+  height: 72px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.crops-upload-area p {
+  font-weight: 500;
+  font-size: var(--font-size-md);
+  margin-top: var(--space-sm);
+}
+
+.crops-btn-avancar {
+  background: radial-gradient(circle, rgba(10,50,10,1) 0%, rgba(0,0,0,1) 100%);
+  color: #00ff00;
+  font-size: var(--font-size-2xl);
+  font-weight: 700;
+  border-radius: 60px;
+  padding: 20px 80px;
+  width: 70%;
+  border: 1px solid rgba(0, 255, 0, 0.1);
+  box-shadow: 0 0 40px rgba(0, 255, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.crops-btn-avancar:hover {
+  box-shadow: 0 0 60px rgba(0, 255, 0, 0.25);
+  transform: translateY(-2px);
+  text-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+}
+
+.crops-right {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}
+
+.crops-input-card {
+  background-color: var(--bg-card);
+  border-radius: var(--radius-2xl);
+  padding: var(--space-xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.crops-input-card h3 {
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+  text-align: center;
+  color: var(--text-primary);
+}
+
+.crops-input-card input {
+  background-color: #d9d9d9;
+  border-radius: 40px;
+  border: none;
+  padding: 16px 24px;
+  font-size: var(--font-size-md);
+  color: #000;
+  width: 100%;
+  font-weight: 500;
+}
+
+.crops-input-card input:focus {
+  outline: 2px solid var(--accent-primary);
+  background-color: #fff;
+}
+
+@media (max-width: 1024px) {
+  .crops-layout {
+    grid-template-columns: 1fr;
+  }
+}

@@ -6,6 +6,7 @@ import Production from './components/production/Production';
 import Expenses from './components/expenses/Expenses';
 import Employees from './components/employees/Employees';
 import Reports from './components/reports/Reports';
+import Crops from './components/crops/Crops';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="despesas" element={<Expenses />} />
         <Route path="funcionarios" element={<Employees />} />
         <Route path="relatorios" element={<Reports />} />
+        <Route path="lavouras" element={<Crops />} />
       </Route>
     </Routes>
   );

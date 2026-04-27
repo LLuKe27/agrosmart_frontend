@@ -10,6 +10,7 @@ import {
   ChevronLeft,
   ChevronRight,
   Leaf,
+  Sprout,
 } from 'lucide-react';
 import './Sidebar.css';
 
@@ -20,6 +21,7 @@ const navItems = [
   { path: '/despesas', label: 'Financeiro', icon: DollarSign },
   { path: '/funcionarios', label: 'Funcionários', icon: Users },
   { path: '/relatorios', label: 'Relatórios', icon: BarChart3 },
+  { path: '/lavouras', label: 'Análise de Campo', icon: Sprout },
 ];
 
 export default function Sidebar() {
