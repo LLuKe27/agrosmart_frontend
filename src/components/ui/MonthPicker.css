@@ -1,0 +1,134 @@
+/* ==========================================
+   MonthPicker Styles
+   ========================================== */
+
+.custom-monthpicker {
+  position: relative;
+  width: 100%;
+}
+
+.monthpicker-trigger {
+  width: 100%;
+  background: var(--bg-input);
+  border: 1px solid var(--border-card);
+  color: var(--text-primary);
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-md);
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all var(--transition-fast);
+}
+
+.monthpicker-trigger:hover, .monthpicker-trigger:focus {
+  border-color: var(--accent-primary);
+}
+
+.month-placeholder {
+  color: var(--text-muted);
+}
+
+.month-selected {
+  color: var(--text-primary);
+}
+
+.monthpicker-icon {
+  color: var(--text-muted);
+}
+
+.monthpicker-popup {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  z-index: var(--z-modal);
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-xl);
+  padding: var(--space-md);
+  width: 280px;
+  box-shadow: var(--shadow-lg);
+  animation: fadeIn var(--transition-fast);
+}
+
+.monthpicker-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-md);
+  padding-bottom: var(--space-sm);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.current-year {
+  font-weight: 700;
+  color: var(--text-primary);
+  font-size: var(--font-size-md);
+}
+
+.month-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin: var(--space-md) 0;
+}
+
+.month-btn {
+  padding: 10px 0;
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+  background: transparent;
+  transition: all var(--transition-fast);
+  text-transform: capitalize;
+}
+
+.month-btn:hover {
+  background: rgba(244, 234, 213, 0.05);
+  color: var(--text-primary);
+}
+
+.month-btn.current {
+  color: var(--accent-primary);
+  font-weight: 600;
+}
+
+.month-btn.selected {
+  background: var(--accent-primary);
+  color: var(--bg-primary); /* High contrast */
+  font-weight: 700;
+  box-shadow: var(--shadow-glow);
+}
+
+.monthpicker-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: var(--space-sm);
+  padding-top: var(--space-sm);
+  border-top: 1px solid var(--border-subtle);
+}
+
+.footer-btn {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: var(--radius-sm);
+  transition: all var(--transition-fast);
+}
+
+.action-clear {
+  color: var(--text-muted);
+}
+
+.action-clear:hover {
+  color: var(--accent-red);
+}
+
+.action-today {
+  color: var(--accent-primary);
+}
+
+.action-today:hover {
+  background: var(--accent-primary-glow);
+}

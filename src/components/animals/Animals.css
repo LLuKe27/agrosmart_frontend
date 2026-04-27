@@ -1,0 +1,19 @@
+.page-container {
+  padding-bottom: 2rem;
+}
+
+.text-2xl {
+  font-size: var(--font-size-2xl);
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.text-center { text-align: center; }
+.py-8 { padding-top: 2rem; padding-bottom: 2rem; }
+.mt-6 { margin-top: 1.5rem; }
+
+.justify-end { justify-content: flex-end; }
+.gap-4 { gap: 1rem; }
+.flex { display: flex; }

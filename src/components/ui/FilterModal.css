@@ -1,0 +1,12 @@
+/* ==========================================
+   FilterModal Styles
+   ========================================== */
+
+.filter-modal-body {
+  padding: var(--space-sm) 0;
+}
+
+.filter-actions {
+  border-top: 1px solid var(--border-subtle);
+  padding-top: var(--space-md);
+}

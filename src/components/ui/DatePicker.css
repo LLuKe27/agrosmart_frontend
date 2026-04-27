@@ -1,0 +1,136 @@
+/* ==========================================
+   DatePicker Styles
+   ========================================== */
+
+.custom-datepicker {
+  position: relative;
+  width: 100%;
+}
+
+.datepicker-trigger {
+  width: 100%;
+  background: var(--bg-input);
+  border: 1px solid var(--border-card);
+  color: var(--text-primary);
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-md);
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all var(--transition-fast);
+}
+
+.datepicker-trigger:hover, .datepicker-trigger:focus {
+  border-color: var(--accent-primary);
+}
+
+.date-placeholder {
+  color: var(--text-muted);
+}
+
+.date-selected {
+  color: var(--text-primary);
+}
+
+.datepicker-icon {
+  color: var(--text-muted);
+}
+
+.datepicker-popup {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  z-index: var(--z-modal);
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-xl);
+  padding: var(--space-md);
+  width: 280px;
+  box-shadow: var(--shadow-lg);
+  animation: fadeIn var(--transition-fast);
+}
+
+.datepicker-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-md);
+}
+
+.current-month {
+  font-weight: 600;
+  font-size: var(--font-size-sm);
+  color: var(--text-primary);
+}
+
+.nav-btn {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--bg-card);
+  color: var(--text-secondary);
+  transition: all var(--transition-fast);
+}
+
+.nav-btn:hover {
+  background: var(--bg-card-hover);
+  color: var(--text-primary);
+}
+
+.datepicker-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+}
+
+.weekday-header {
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+}
+
+.day-cell-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.day-btn {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size-sm);
+  color: var(--text-primary);
+  background: transparent;
+  transition: all var(--transition-fast);
+}
+
+.day-btn:hover {
+  background: rgba(244, 234, 213, 0.1);
+}
+
+.day-btn.today {
+  color: var(--accent-primary);
+  font-weight: bold;
+}
+
+.day-btn.selected {
+  background: var(--accent-primary);
+  color: var(--bg-primary); /* Uses Night Trunk base for high contrast */
+  font-weight: bold;
+  box-shadow: var(--shadow-glow);
+}
+
+.empty-day {
+  width: 28px;
+  height: 28px;
+}
